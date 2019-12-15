@@ -10,6 +10,7 @@ User input must match the define values
 =======
 Description
 Analyzing system usage between three large cities: Chicago, New York City, and Washington, DC. Push the bikeshare.py to the online repository Created a branch Documentation
+Created a branch Refactoring
 >>>>>>> 79c6efbbc8f62e42bd9cccdfc13137a37f926043
 
 Files used
