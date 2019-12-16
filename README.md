@@ -5,10 +5,9 @@
 Bikeshare Project
 
 ### Description
-Analyzing system usage between three large cities: Chicago, New York City, and Washington, DC.
-Push the bikeshare.py to the online repository
-Created a branch Documentation
-Fixing of error
+Analyzing system usage between three large cities: Chicago, New York City, and Washington, DC. Push the bikeshare.py to the online repository Created a branch Documentation
+Created a branch Refactoring
+Submitted the corrected file bikeshare.py
 
 ### Files used
 chicago.csv, new_york_city.csv, washington.csv, bikeshare_2.py
