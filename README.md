@@ -1,7 +1,6 @@
 ### Date created
 15/12/2019
 
-
 ### Project Title
 Bikeshare Project
 
@@ -10,7 +9,6 @@ Analyzing system usage between three large cities: Chicago, New York City, and W
 Push the bikeshare.py to the online repository
 Created a branch Documentation
 Fixing of error
-
 
 ### Files used
 chicago.csv, new_york_city.csv, washington.csv, bikeshare_2.py
