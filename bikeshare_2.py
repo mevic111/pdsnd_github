@@ -32,7 +32,6 @@ def get_filters():
         print("Invalid input!")
         city = input('Which city would you like to fetch information about? ')
 
-
     # get user input for month (all, january, february, ... , june)
     month = input('Select month from January to June or All to fetch data for all the months: ')
     while month.lower() not in months :
@@ -46,8 +45,12 @@ def get_filters():
         day = input('Select day of week, type \'all\' to fetch data for all days: ')
 
     print("Please input an integer value")
-    limit = int(input('How many lines of data would you like to see? (Default: 5): '))
-    
+    limit = input('How many lines of data would you like to see? (Default: 5): ')
+    if len(limit) == 0:
+        limit = 5
+    else :
+        limit = int(input('How many lines of data would you like to see? (Default: 5): '))
+        
     print('-'*40)
     return city, month, day, limit
 
@@ -97,15 +100,15 @@ def time_stats(df):
     start_time = time.time()
 
     # display the most common month
-    month = df.groupby([df['Month of year']]).max()
+    month = df['Month of year'].mode()[0]
     print("Most common month: ", month)
 
     # display the most common day of week
-    day = df.groupby([df['Day of week']]).max()
+    day = df['Day of week'].mode()[0]
     print("Most common day of the week: ", day)
 
     # display the most common start hour
-    hour = df.groupby([df['Hour']]).max()
+    hour = df['Hour'].mode()[0]
     print("Most common start hour", hour)
 
 
@@ -147,7 +150,6 @@ def trip_duration_stats(df):
     # display mean travel time
     average = df['Trip Duration'].mean()
     print("Mean travel time: ", average)
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
